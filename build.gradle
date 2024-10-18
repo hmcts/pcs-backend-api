@@ -117,8 +117,8 @@ project.tasks['check'].dependsOn integration
 
 sonarqube {
   properties {
-    property "sonar.projectName", "Reform :: spring-boot-template"
-    property "sonar.projectKey", "uk.gov.hmcts.reform:spring-boot-template"
+    property "sonar.projectName", "Reform :: pcs-backend"
+    property "sonar.projectKey", "uk.gov.hmcts.reform:pcs-backend"
   }
 }
 
@@ -176,10 +176,10 @@ dependencies {
   }
 }
 
-mainClassName = 'uk.gov.hmcts.reform.demo.Application'
+mainClassName = 'uk.gov.hmcts.reform.pcs-demo.Application'
 
 bootJar {
-  archiveFileName = "spring-boot-template.jar"
+  archiveFileName = "pcs-backend.jar"
 
   manifest {
     attributes('Implementation-Version': project.version.toString())
